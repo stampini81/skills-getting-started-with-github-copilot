@@ -89,7 +89,8 @@ section h3 {
 
 .participant-list {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .participant-list li {
@@ -104,6 +105,47 @@ section h3 {
 .participant-empty {
   color: #6f7897;
   font-style: italic;
+}
+
+.participant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid #dbe4ff;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.participant-email {
+  font-size: 14px;
+  color: #213161;
+  word-break: break-word;
+}
+
+.participant-remove-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ef9a9a;
+  background-color: #fff5f5;
+  color: #c62828;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.participant-remove-btn:hover {
+  background-color: #ffe9e9;
+  transform: translateY(-1px);
+}
+
+.participant-remove-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .form-group {
